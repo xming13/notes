@@ -20,7 +20,7 @@ arr.filter(a => a === x)[0]; // bad
 
 array.includes(`itemToSearch`) returns a boolean whether array contains `itemToSearch`.
 
-`includes` returns true as soon as `itemToSearch` is found, and skip evaluating the rest of the elements.
+`includes` returns `true` as soon as `itemToSearch` is found, and skip evaluating the rest of the elements.
 
 ```
 arr.includes(x); // good
@@ -33,7 +33,7 @@ arr.filter(a => a === x).length; // bad
 
 array.some(`predicate`) returns a boolean whether array contains element that passes the `predicate` function.
 
-`some` returns true as soon as the first element passes the predicate, and skip evaluating the rest of the elements.
+`some` returns `true` as soon as the first element passes the predicate, and skip evaluating the rest of the elements.
 
 ```
 arr.some(isOdd); // good
@@ -47,7 +47,7 @@ arr.filter(isOdd)[0] !== undefined; // bad
 
 array.every(`predicate`) returns a boolean whether all elements in the array passes the `predicate` function.
 
-`every` returns false as soon as one element fails the predicate, and skip evaluating the rest of the elements.
+`every` returns `false` as soon as one element fails the predicate, and skip evaluating the rest of the elements.
 
 ```
 arr.every(isOdd); // good
