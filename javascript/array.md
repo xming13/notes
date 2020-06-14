@@ -26,6 +26,7 @@ array.includes(`itemToSearch`) returns a boolean whether array contains `itemToS
 arr.includes(x); // good
 
 arr.find(a => a === x) !== undefined; // bad
+arr.filter(a => a === x)[0] !== undefined; // bad
 arr.filter(a => a === x).length; // bad
 ```
 
